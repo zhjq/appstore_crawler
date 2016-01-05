@@ -1,0 +1,28 @@
+download_message:
+{
+    'message_type':'crawl/normal' or other string
+    'download_session_produce':{'method':'GET/POST','url':'','data':None}
+    'download_url':''
+    'download_method':requests.action
+    'download_data':None or requests.data({})
+    'request_headers':None( {'User-Agent': 'AndroidDownloadManager/4.1.1 (Linux; U; Android 4.1.1; Nexus S Build/JRO03E)'}) or other dict
+    'download_folder':None('download_folder/tmp/') or other string
+    'download_file_name':None('thread_id'+'_'+'time.time()') or other string
+    'download_file_type':None('apk') or other string
+}
+
+file_handle_message:
+{
+    'message_type':'crawl_message' or other string
+    'file_name':
+    'target_folder':None(download_folder) or other string
+    'source',
+    'category',
+    'download_count',
+    'upload_time',
+    'rating',
+    'download_redirect_urls',
+    'detail_url',
+    'download_time',
+    'app_name'
+}
